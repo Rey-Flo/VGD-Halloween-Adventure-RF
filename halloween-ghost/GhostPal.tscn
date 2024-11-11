@@ -220,11 +220,12 @@ animations = [{
 
 [node name="Ghostly" type="CharacterBody2D"]
 script = ExtResource("1_t15w2")
+JUMP_FORCE = 500
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_maoid")
-animation = &"Fall"
+animation = &"Jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_kgmrs")
